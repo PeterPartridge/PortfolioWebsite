@@ -80,3 +80,9 @@ c:\users\peterplay\documents\visual studio 2015\Projects\Portfolio\Portfolio\bin
 c:\users\peterplay\documents\visual studio 2015\Projects\Portfolio\Portfolio\obj\Debug\Portfolio.csprojResolveAssemblyReference.cache
 c:\users\peterplay\documents\visual studio 2015\Projects\Portfolio\Portfolio\obj\Debug\Portfolio.dll
 c:\users\peterplay\documents\visual studio 2015\Projects\Portfolio\Portfolio\obj\Debug\Portfolio.pdb
+C:\Users\PeterPlay\Documents\Visual Studio 2015\Projects\Portfolio\Portfolio\bin\BundleTransformer.Core.dll
+C:\Users\PeterPlay\Documents\Visual Studio 2015\Projects\Portfolio\Portfolio\bin\BundleTransformer.Less.dll
+C:\Users\PeterPlay\Documents\Visual Studio 2015\Projects\Portfolio\Portfolio\bin\JavaScriptEngineSwitcher.Core.dll
+C:\Users\PeterPlay\Documents\Visual Studio 2015\Projects\Portfolio\Portfolio\bin\ru-ru\BundleTransformer.Core.resources.dll
+C:\Users\PeterPlay\Documents\Visual Studio 2015\Projects\Portfolio\Portfolio\bin\ru-ru\BundleTransformer.Less.resources.dll
+C:\Users\PeterPlay\Documents\Visual Studio 2015\Projects\Portfolio\Portfolio\bin\ru-ru\JavaScriptEngineSwitcher.Core.resources.dll

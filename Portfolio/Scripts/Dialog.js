@@ -10,6 +10,7 @@
     //on click function for dialog box
     $(function () {
         $("#welcome").click(function () {
+            $("#shadow").addClass("ui-widget-overlay ui-widget-shadow");
             $("#dialog").dialog("open");
         });
     });
@@ -27,6 +28,7 @@
             buttons: [{
                 text: "close",
                 click: function () {
+                    $("#shadow").removeClass("ui-widget-overlay ui-widget-shadow");
                     $("#dialog").dialog("close");
                 }
             }
@@ -35,6 +37,5 @@
 
         //hide the title bar
         $(".ui-dialog-titlebar").hide();
-        $("#dialog").addClass("ui-widget-shadow");
     });
 });

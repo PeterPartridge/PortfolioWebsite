@@ -1,29 +1,138 @@
-﻿@{ 
-    ViewBag.Title = "frontPage";
+﻿@{
+    ViewBag.Title = "Portfolio";
 }
+<div class="col-md-4">
+    <section id="programmingLang">
+        <div>
+            <h1> Programming Languages </h1>
+        </div>
 
-<div id="welcome">
+        <div>
+            <img src="~/Images/Programming Languages/javascript.jpg" alt="Javascript" />
+        </div>
+    </section>
+
+    @* welcome text *@
+</div>
+<div id="welcome" class="col-md-4">
     <h1>My name is Peter Partridge</h1>
     <h1>Welcome to my portfolio</h1>
 </div>
 
-
-
-@*Dialog box that pops up from cliking on welcome*@
-<div id="dialog">
-    <article>
-        <div><h1>About me</h1></div>
+@* Java framework cycler *@
+<div class="col-md-4">
+    <section id="javaFramorks">
         <div>
-            <p>I have always enjoyed building pcs and solving computer problems from a young age, so I have always had a great love for technology. 
-            I started playing with computer game building programmes and found great excitment from just moving a single block on a screen.</p>
+        <h1>Java Fromworks</h1>
+            </div>
+        <div>
 
-            <p>Soon a freind hearing me telling the story of a moving block and how amasing it was to me, she sent me a book on C#, and this sparked my love for devlopment.
-            I first started courses on pluralsite for offline MVVM applications on .net, but this soon evlolved to a love and fasination of building an online application.</p>
-
-            <p>I have been training over the past year in both front and back end sides of .net devlopment and after alot of cheering ups and solving a problem, 
-            to wall banging lows I found I enjoyed every minute, and the problems web devlopers are faced with on a daily basis makes me even more excited.</p>
+            <img src="~/Images/Logos/jquery.png" alt="Jquery"/>
+        </div>
+        <div>
+            <img src="~/Images/Logos/JQuery_UI_Logo.svg.png" alt="JqueryUi" />
+        </div>
+        <div>
+            <img src="~/Images/Logos/angularjs.png" alt="angulareJs" />
+            <h3>Still Learning</h3>
+            <div id="angulareProgress"></div>
         </div>
         
-    </article>
+    </section>
+</div>
+@* Java framework cycler *@
+
+@* IDE and Frameworks *@
+<div class="col-md-4">
+    <section>
+        <div>
+            <h1> Framworks and Integrated Development Environment's</h1>
+        </div>
+        <div>
+            <img src="~/Images/IDE and Frameworks/best-asp.net-4.5.png" />
+        </div>
+        <div>
+            <img src="~/Images/IDE and Frameworks/asp.netMVC.jpg" />
+        </div>
+        <div>
+            <img src="~/Images/IDE and Frameworks/bootstrap02.png" />
+        </div>
+        <div>
+            <img src="~/Images/IDE and Frameworks/entity_image.png" />
+        </div>
+    </section>
+</div>
+@*IDE and Frameworks  *@
+
+
+@* websites *@
+<div class="col-md-4">
+    <section>
+        <div>
+            <h1>Websites I have built</h1>
+        </div>
+        <div>
+           <a href="http://www.cooks-corner.co.uk">
+               <img src="~/Images/Websites/CookscornerIcons.png" />
+           </a>
+        </div>
+    </section>
+</div>
+@*websites  *@
+
+@* social media *@
+<div class="col-md-4">
+    <section>
+        <div>
+            <h1>Social</h1>
+        </div>
+        <div>
+            <h1>Github and social media</h1>
+        </div>
+    </section>
+</div>
+@* social media *@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*Dialog box that pops up from clicking on welcome text*@
+
+
+@*shadow div*@
+<div id="shadow">
+  
+    <section id="dialog">
+        <article>
+            <div><h1>About me</h1></div>
+            <div>
+                <p>
+                    I have always enjoyed building pcs and solving computer problems from a young age, so I have always had a great love for technology.
+                    I started playing with computer game building programmes and found great excitment from just moving a single block on a screen.
+                </p>
+
+                <p>
+                    Soon a freind hearing me telling the story of a moving block and how amasing it was to me, she sent me a book on C#, and this sparked my love for devlopment.
+                    I first started courses on pluralsite for offline MVVM applications on .net, but this soon evlolved to a love and fasination of building an online application.
+                </p>
+
+                <p>
+                    I have been training over the past year in both front and back end sides of .net devlopment and after alot of cheering ups and solving a problem,
+                    to wall banging lows I found I enjoyed every minute, and the problems web devlopers are faced with on a daily basis makes me even more excited.
+                </p>
+            </div>
+
+        </article>
+    </section>
 </div>
 @*Dialog box*@
