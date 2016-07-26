@@ -15,10 +15,10 @@ $("document").ready(function () {
         next: '#programmingLang'
     });
 
-    $("#ideAndFrameworks").cycle({
+    $("#frameworks").cycle({
         fx: 'scrollHorz',
         timeout: 2000,
-        next: '#ideAndFrameworks'
+        next: '#frameworks'
     });
     
     $("#workDone").cycle({

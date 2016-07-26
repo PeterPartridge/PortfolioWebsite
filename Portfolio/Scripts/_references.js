@@ -13,3 +13,4 @@
 /// <reference path="jquery.cycle.all.min.js" />
 /// <reference path="cycles.js" />
 /// <reference path="jqueryother.js" />
+/// <reference path="visuals.js" />

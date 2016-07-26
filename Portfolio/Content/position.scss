@@ -1,0 +1,7 @@
+﻿
+@mixin leftRelativePosition($left, $top)
+{
+ position: relative;
+left: $left;
+  top: $top;
+  }

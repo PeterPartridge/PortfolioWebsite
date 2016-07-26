@@ -1,3 +1,6 @@
-﻿.container{
-    padding:0, 0;
+﻿
+@mixin buttonBorder()
+{
+border-radius: 50%;
+  border: 0.1em solid black;
 }

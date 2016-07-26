@@ -1,45 +1,65 @@
 ﻿@{
     ViewBag.Title = "Portfolio";
-}
-<div class="col-md-4">
+    }
+
+    @* welcome text *@
+<div class="col-md-4 hiddenAtStart start">
     <h1> Programming Languages </h1>
     <section id="programmingLang">
         <div>
             <img src="~/Images/Programming Languages/javascript.jpg" alt="Javascript" />
         </div>
     </section>
+</div>
 
-    @* welcome text *@
-</div>
-<div id="welcome" class="col-md-4">
-    <h1>My name is Peter Partridge</h1>
-    <h1>Welcome to my portfolio</h1>
-</div>
+
+<section id="welcome" class="col-md-4 ">
+    <div id="startTextOne">
+        <h1>Welcome</h1>
+    </div>
+    <div id="startTextTwo">
+        <h1>  My name is Peter Partridge</h1>
+    </div>
+    <div id="startTextThree">
+        <h1>This is my portfolio</h1>
+    </div>
+    <div id="startTextFour">
+        <h1> Please explore</h1>
+    </div>
+</section>
+
+
 
 @* Java framework cycler *@
-<div class="col-md-4">
-    <h1>Java Fromworks</h1>
+<div class="col-md-4 hiddenAtStart start">
+    <div id="" class="">
+        <h1>Java Fromworks</h1>
+    </div>
     <section id="javaFramorks">
         <div>
 
-            <img src="~/Images/Logos/jquery.png" alt="Jquery"/>
+            <img src="~/Images/Logos/jquery.png" alt="Jquery" />
         </div>
         <div>
             <img src="~/Images/Logos/JQuery_UI_Logo.svg.png" alt="JqueryUi" />
         </div>
-        <div>
+        <div style="height:10em">
             <img src="~/Images/Logos/angularjs.png" alt="angulareJs" />
-            <h3>Still Learning</h3>
             <div id="angulareProgress"></div>
+             <h3>Still Learning</h3>
+            
         </div>
-        
+
     </section>
 </div>
 @* Java framework cycler *@
 
 @* IDE and Frameworks *@
-<div class="col-md-4">
-    <section id="ideAndFrameworks">
+<div class="col-md-4 hiddenAtStart start">
+    <div id="frame">
+        <h1>Framworks</h1>
+    </div>
+    <section id="frameworks">
         <div>
             <img src="~/Images/IDE and Frameworks/best-asp.net-4.5.png" />
         </div>
@@ -53,19 +73,19 @@
             <img src="~/Images/IDE and Frameworks/entity_image.png" />
         </div>
     </section>
-    <h1> Framworks and Integrated Development Environment's</h1>
+
 </div>
 @*IDE and Frameworks  *@
 
 
 @* websites *@
-<div class="col-md-4">
-    
+<div class="col-md-4 hiddenAtStart start">
+
     <section id="workDone">
         <div>
-           <a href="http://www.cooks-corner.co.uk">
-               <img src="~/Images/Websites/CookscornerIcons.png" />
-           </a>
+            <a href="http://www.cooks-corner.co.uk">
+                <img src="~/Images/Websites/CookscornerIcons.png" />
+            </a>
         </div>
     </section>
     <h1>Websites I have built</h1>
@@ -73,7 +93,7 @@
 @*websites  *@
 
 @* social media *@
-<div class="col-md-4">
+<div class="col-md-4 hiddenAtStart start">
     <section>
         <div>
             <h1>Social</h1>

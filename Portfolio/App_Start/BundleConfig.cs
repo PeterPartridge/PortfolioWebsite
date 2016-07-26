@@ -14,7 +14,8 @@ namespace Portfolio
                         "~/Scripts/jquery.cycle.all.js",
                         "~/Scripts/Dialog.js",
                         "~/Scripts/cycles.js",
-                        "~/Scripts/JqueryOther.js"));
+                        "~/Scripts/JqueryOther.js",
+                        "~/Scripts/visuals.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -30,8 +31,7 @@ namespace Portfolio
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css",
-                      "~/Content/themes/base/all.css"));
+                      "~/Content/site.css"));
         }
     }
 }

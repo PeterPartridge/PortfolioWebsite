@@ -1,3 +1,71 @@
 ﻿@import "Font";
 @import "slider";
 @import "paddingAndBorders";
+@import "position";
+
+* {
+  text-align: center;
+  padding:0;
+  margin:0;
+ color:white;
+  background-color:black !important;
+}
+@media(min-width:6em)
+{
+
+}
+
+#welcome {
+  @include leftRelativePosition(0,2em);
+}
+
+#me {
+  display: inline-block;
+ @include leftRelativePosition(-3em, 2em);
+  width: 10em;
+  background-color: blue;
+  @include buttonBorder;
+  line-height: 2.5em;
+  text-decoration: none;
+  color: white;
+  &:hover {
+    background-color: green;
+    cursor: pointer;
+  }
+}
+
+#frame {
+  position: relative;
+  @include leftRelativePosition(40%,2em);
+  width:10em;
+  #idef {
+    display: inline-block;
+    width: 12em;
+    background-color: blue;
+    border-radius: 23% 0 ;
+    border: 0.1em solid black;
+    line-height: 2.5em;
+    text-decoration: none;
+    color: white;
+    &:hover {
+      background-color: green;
+      cursor: pointer;
+    }
+  }
+    #idefList {
+      ul {
+        text-align: center;
+        li {
+          text-decoration:none;
+          list-style-type:none;
+          
+        }
+      }
+    }
+  
+}
+
+.hiddenAtStart
+{
+    visibility:hidden;
+}
