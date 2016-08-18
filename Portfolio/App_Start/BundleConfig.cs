@@ -11,10 +11,7 @@ namespace Portfolio
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js",
                         "~/Scripts/jquery-ui-{version}.js",
-                        "~/Scripts/jquery.cycle.all.js",
                         "~/Scripts/Dialog.js",
-                        "~/Scripts/cycles.js",
-                        "~/Scripts/JqueryOther.js",
                         "~/Scripts/visuals.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(

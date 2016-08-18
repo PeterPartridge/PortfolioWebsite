@@ -5,3 +5,28 @@
 left: $left;
   top: $top;
   }
+
+@mixin Absolute-Position($zindex)
+{
+       z-index:$zindex;
+      position:absolute;
+}
+
+@mixin leftTopAbsolute($left, $top)
+{
+ position: absolute;
+left: $left;
+  top: $top;
+  }
+
+@mixin rightTopAbsolute($right, $top)
+{
+ position: absolute;
+right:$right;
+  top: $top;
+  }
+
+@mixin bottomAbsolute($bottom){
+    position:absolute;
+    bottom:$bottom;
+}

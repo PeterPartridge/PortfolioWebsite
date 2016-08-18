@@ -1,21 +1,12 @@
 ﻿$(document).ready(function () {
-    // hide the hover container
-    $("#hoverText").hide();
-
-    //hover event
-    $("#welcome").hover(function () {
-        $("#hoverText").toggle(1000);
-    });
 
     //on click function for dialog box
     $(function () {
-        $("#welcome").click(function () {
+        $(".dialogBoxClicker").click(function () {
             $("#shadow").addClass("ui-widget-overlay ui-widget-shadow");
             $("#dialog").dialog("open");
         });
     });
-
-
 
     //dialog function
     $(function () {
@@ -23,19 +14,22 @@
             autoOpen: false,
             width: 500,
             height: 500,
+            title:"All about me",
             resizable: false,
             modal: true,
+            draggable:false,
             buttons: [{
                 text: "close",
                 click: function () {
-                    $("#shadow").removeClass("ui-widget-overlay ui-widget-shadow");
                     $("#dialog").dialog("close");
                 }
             }
             ]
         });
-
-        //hide the title bar
-        $(".ui-dialog-titlebar").hide();
     });
-});
+
+    //catches close event and removes shadow
+    $("#dialog").on("dialogclose", function(event){
+        $("#shadow").removeClass("ui-widget-overlay ui-widget-shadow");
+    });
+    });

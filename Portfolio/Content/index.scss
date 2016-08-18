@@ -1,71 +1,128 @@
 ﻿@import "Font";
-@import "slider";
 @import "paddingAndBorders";
 @import "position";
+@import "color";
 
-* {
-  text-align: center;
-  padding:0;
-  margin:0;
- color:white;
-  background-color:black !important;
-}
-@media(min-width:6em)
+
+@media(min-width:6rem)
 {
 
+.container, body, html {
+  text-align: center;
+  padding:0;
+ margin:2rem auto;
+ color:black;
+ background-color:$mainBackgroundColor;
 }
 
-#welcome {
-  @include leftRelativePosition(0,2em);
+.fadeText{
+    font-size:9em;
 }
+  .welcomeText {
+  @include leftRelativePosition(0,2rem);
+  font-size:3em;
+  @include Padding(0,0,1rem,0);
 
-#me {
-  display: inline-block;
- @include leftRelativePosition(-3em, 2em);
-  width: 10em;
-  background-color: blue;
-  @include buttonBorder;
-  line-height: 2.5em;
-  text-decoration: none;
-  color: white;
-  &:hover {
-    background-color: green;
-    cursor: pointer;
-  }
 }
+ .dialogBoxClicker{
 
-#frame {
-  position: relative;
-  @include leftRelativePosition(40%,2em);
-  width:10em;
-  #idef {
-    display: inline-block;
-    width: 12em;
-    background-color: blue;
-    border-radius: 23% 0 ;
-    border: 0.1em solid black;
-    line-height: 2.5em;
-    text-decoration: none;
-    color: white;
-    &:hover {
-      background-color: green;
-      cursor: pointer;
-    }
-  }
-    #idefList {
-      ul {
-        text-align: center;
-        li {
-          text-decoration:none;
-          list-style-type:none;
-          
-        }
-      }
-    }
-  
-}
+     &:hover{
+         cursor:pointer;
+         color:$hoverColor;
+     }
+ }
 
 .hiddenAtStart
 {
     visibility:hidden;
+
+}
+
+.removeClassOnClick{
+        visibility:hidden;
+        position:absolute;
+    }
+
+.start{
+    a{
+        text-decoration:none;
+        color:#0e4df3;
+        &:hover{
+            cursor:pointer;
+color:$hoverColor;
+        }
+    }
+
+     h1{
+     text-shadow:0rem 2rem 0.6rem black;
+ } 
+}
+
+.clickToActivateDropDown{
+    @include leftBottomBorder(0.2rem,solid,black,40%,50%,50%);
+    padding:10%;
+    &:hover{
+cursor:pointer;
+color:$hoverColor;
+    }
+
+  
+}
+
+.logo{
+    font-size:3em;
+    color:#0e4df3;
+    text-shadow:0 2.3rem 0.1rem black,
+         0 1.625rem 0.4rem black,
+         0 0.52rem 0.2rem black,
+         0 0rem 0.2rem white,
+         0 0.35rem 0.3rem black,
+         0 1.625rem 0.4rem black,
+         0 2.4rem 0.6rem black;
+
+}
+
+.ui-dialog{
+    width:100% !important;
+}
+
+.ui-widget-content{
+    background:$mainBackgroundColor !important;
+}
+
+.websitePopup{
+    @include bottomAbsolute(-0.2rem);
+    background-color:$DropDownColor;
+}
+}
+
+@media(min-width:50rem)
+{
+  .dropDownOverlay{
+  @include Absolute-Position(99);
+  background-color:#0e4df3;
+  top:13.2rem;
+  @include dropDownBorderRadius(15%,21%, 12%, 12%);
+  }
+  .contactLogo{
+      margin-top:2rem;
+  }
+
+  .ui-dialog{
+    width:35% !important;
+    top:10rem;
+    left:40rem;
+}
+}
+
+@media(min-width:108rem){
+
+    .bigLeftTop{
+        @include leftTopAbsolute(-30rem, 0rem);
+
+    }
+    .bigRightTop{
+        @include rightTopAbsolute(-30rem, 2rem);
+    }
+
 }
