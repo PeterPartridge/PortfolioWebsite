@@ -4,125 +4,120 @@
 @import "color";
 
 
-@media(min-width:6rem)
-{
+@media(min-width:6rem) {
 
-.container, body, html {
-  text-align: center;
-  padding:0;
- margin:2rem auto;
- color:black;
- background-color:$mainBackgroundColor;
-}
-
-.fadeText{
-    font-size:9em;
-}
-  .welcomeText {
-  @include leftRelativePosition(0,2rem);
-  font-size:3em;
-  @include Padding(0,0,1rem,0);
-
-}
- .dialogBoxClicker{
-
-     &:hover{
-         cursor:pointer;
-         color:$hoverColor;
-     }
- }
-
-.hiddenAtStart
-{
-    visibility:hidden;
-
-}
-
-.removeClassOnClick{
-        visibility:hidden;
-        position:absolute;
+    .container, body, html {
+        text-align: center;
+        padding: 0;
+        margin: 2rem auto;
+        color: black;
+        background-color: $mainBackgroundColor;
+    }
+    .dividerHidden{
+        height:1rem;
+        width:100%;
+        border-top: 0.3rem solid $mainBackgroundColor;
     }
 
-.start{
-    a{
-        text-decoration:none;
-        color:#0e4df3;
-        &:hover{
-            cursor:pointer;
-color:$hoverColor;
+    .fadeText {
+        font-size: 9em;
+    }
+
+    hr {
+        height:1rem;
+        width:100%;
+        margin-top:10rem;
+	border-top: 0.3rem double $mainBorderColor;
+	text-align: center;
+}
+
+    .welcomeText {
+        @include leftRelativePosition(0,2rem);
+        font-size: 3em;
+        @include Padding(0,0,1rem,0);
+        
+    }
+
+    .dialogBoxClicker{
+              &:hover {
+            cursor: pointer;
+            color: $hoverColor;
         }
     }
 
-     h1{
-     text-shadow:0rem 2rem 0.6rem black;
- } 
-}
-
-.clickToActivateDropDown{
-    @include leftBottomBorder(0.2rem,solid,black,40%,50%,50%);
-    padding:10%;
-    &:hover{
-cursor:pointer;
-color:$hoverColor;
+    .hiddenAtStart {
+        visibility: hidden;
     }
 
-  
-}
+    .start {
+        a {
+            text-decoration: none;
+            color: black;
 
-.logo{
-    font-size:3em;
-    color:#0e4df3;
-    text-shadow:0 2.3rem 0.1rem black,
-         0 1.625rem 0.4rem black,
-         0 0.52rem 0.2rem black,
-         0 0rem 0.2rem white,
-         0 0.35rem 0.3rem black,
-         0 1.625rem 0.4rem black,
-         0 2.4rem 0.6rem black;
+            &:hover {
+                cursor: pointer;
+                color: $hoverColor;
+            }
+        }
 
-}
-
-.ui-dialog{
-    width:100% !important;
-}
-
-.ui-widget-content{
-    background:$mainBackgroundColor !important;
-}
-
-.websitePopup{
-    @include bottomAbsolute(-0.2rem);
-    background-color:$DropDownColor;
-}
-}
-
-@media(min-width:50rem)
-{
-  .dropDownOverlay{
-  @include Absolute-Position(99);
-  background-color:#0e4df3;
-  top:13.2rem;
-  @include dropDownBorderRadius(15%,21%, 12%, 12%);
-  }
-  .contactLogo{
-      margin-top:2rem;
-  }
-
-  .ui-dialog{
-    width:35% !important;
-    top:10rem;
-    left:40rem;
-}
-}
-
-@media(min-width:108rem){
-
-    .bigLeftTop{
-        @include leftTopAbsolute(-30rem, 0rem);
-
-    }
-    .bigRightTop{
-        @include rightTopAbsolute(-30rem, 2rem);
+        h1, h2 {
+            text-shadow: 0rem 2rem 0.6rem black;
+        }
     }
 
+     .marginBottom{
+        @include marginBottom(8.3rem);
+    }
+
+
+    .logo {
+        font-size: 3em;
+        color: $secondarybackground;
+        text-shadow: 0 2.3rem 0.1rem black, 0 1.625rem 0.4rem black, 0 0.52rem 0.2rem black, 0 0rem 0.2rem white, 0 0.35rem 0.3rem black, 0 1.625rem 0.4rem black, 0 2.4rem 0.6rem black;
+    }
+    .navbar-default{
+        background-color:$nav;
+        border-color:black;
+    }
+    .navbar-nav{
+        background-color:$nav;
+        li{
+            &:hover{
+               
+            }
+        }
+    }
+
+    .ui-dialog {
+        width: 100% !important;
+        z-index:2000 !important;
+    }
+
+    .ui-widget-content {
+        background: $mainBackgroundColor !important;
+    }
+
+    .websitePopup {
+        @include bottomAbsolute(-0.2rem);
+        background-color: $DropDownColor;
+    }
+
+    .centreImg{
+        margin:0 auto;
+        
+    }
+}
+
+@media(min-width:50rem) {
+    .contactLogo {
+        margin-top: 2rem;
+    }
+
+    .ui-dialog {
+        width: 35% !important;
+        top: 10rem;
+        left: 40rem;
+    }
+
+   
 }

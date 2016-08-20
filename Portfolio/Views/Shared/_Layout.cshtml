@@ -3,25 +3,66 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    <link href="~/Content/themes/redmond/jquery-ui.redmond.css" rel="stylesheet" />
-    <link type="text/css" href="~/Content/themes/base/base.css" rel="stylesheet" /> 
+    <title>WebPartridge</title>
+
+ 
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/themes/base/css")
     @Scripts.Render("~/bundles/modernizr")
+    
     <link href="~/Content/index.scss" rel="stylesheet" />
    
 </head>
 <body>
     <div class="container body-content">
-        @RenderBody()
-        @*<hr class="hiddenAtStart" />
-        <footer class="hiddenAtStart">
-            <p>&copy; @DateTime.Now.Year - WebPartridge</p>
-        </footer>*@
-    </div>
+        <div class="col-md-12 paddingTop">
+            <div class="col-md-4 col-xs-12 hiddenAtStart start " title="Click here to find out about me">
+                <h1 class="dialogBoxClicker">Peter Partrdige</h1>
+            </div>
+
+            @* welcome text *@
+            <div id="welcome" class=" welcomeText col-md-4 col-xs-12 " title="Click here to find out about me">
+                <div id="startTextOne" class="fadeText">
+                    <h1>Peter Partridge</h1>
+                </div>
+                <div id="startTextTwo" class="fadeText">
+                    <h1>Web developer.</h1>
+                </div>
+                <div id="startTextThree">
+                    <h1 class="logo dialogBoxClicker">PP</h1>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12 hiddenAtStart start dialogBoxClicker marginBottom" title="Click here to find out about me">
+                <h1 class="dialogBoxClicker">Front end Web Devloper </h1>
+            </div>
+
+        </div>
+        @* welcome text *@
+        <hr class="dividerHidden"/>
+        @*Nav bar*@
+        <nav class="navbar navbar-default hiddenAtStart start">
+            <div class="container">
+                <ul class="nav navbar-nav col-md-12 col-sm-12 col-xs-12">
+                    <li class="nav-item"><a class="navbar-link" href="#skills">skills</a></li>
+                    <li class="nav-item"><a class="navbar-link" href="#workPersonalGitProjects">Work and peronsal projects</a></li>
+                    <li class="nav-item"><a class="navbar-link" href="#contactMe">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        @*Nav bar*@
+
+
+            @RenderBody()
+            <hr class="hiddenAtStart start" />
+            <footer class="hiddenAtStart start">
+                <p>&copy; @DateTime.Now.Year - WebPartridge</p>
+            </footer>
+        </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/customScripts")
     @RenderSection("scripts", required: false)
 </body>
 </html>

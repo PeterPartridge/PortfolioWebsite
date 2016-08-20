@@ -1,23 +1,11 @@
 ﻿
-@mixin buttonBorder()
-{
-border-radius: 50%;
-  border: 1rem solid black;
-}
 
 @mixin Padding($top,$left,$bottom,$right)
 {
     padding: $top $left $bottom $right;
 }
 
-@mixin leftBottomBorder($Width, $type,$color, $topLeft, $bottomRight, $bottomLeft){
-    border-left:$Width $type $color;
-    border-bottom:$Width $type $color;
-   border-top-left-radius:$topLeft; 
-   border-bottom-left-radius:$bottomLeft;
-   border-bottom-right-radius:$bottomRight;
-    
+
+@mixin marginBottom($bot){
+    margin-bottom:$bot;
 }
-@mixin dropDownBorderRadius($brTopLeft, $brTopRight, $brBotRight, $brBotLeft){
- border-radius: $brTopLeft $brTopRight $brBotRight $brBotLeft;
- }
